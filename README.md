@@ -1,3 +1,3 @@
 # EpicNote
 
-![](1024%401x.png)
+![](/Assets/1024%401x.png)
