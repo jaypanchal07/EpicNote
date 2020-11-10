@@ -39,7 +39,7 @@ class ListViewController: UIViewController {
     
     func setup(){
         self.navigationItem.largeTitleDisplayMode = .automatic
-        self.view.backgroundColor = Colors.lightGrey
+        self.view.backgroundColor = Colors.lime
         self.navigationItem.titleView?.tintColor = .black
         
         
@@ -144,7 +144,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource{
         cell.noteView.setGradientBackground(colorOne: Colors.lightLimePlus, colorTwo: Colors.lightDarkGrey)
         
         //cell.noteView.backgroundColor = Colors.white
-        //cell.noteView.addBorder()
+        cell.noteView.addBorder()
 //        cell.noteView.dropShadow2(color: Colors.black, opacity: 1, offSet: CGSize(width: 1, height: 2), radius: 1, scale: false, size: 5, distance: -3, shadowRadius: 2, shadowOpacity: 0.5)
         cell.shadowView.dropShadow2(color: Colors.black, opacity: 1, offSet: CGSize(width: 1, height: 2), radius: 1, scale: false, size: 5, distance: -3, shadowRadius: 2, shadowOpacity: 0.5)
         
@@ -184,12 +184,12 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource{
     //        vc.title = "Note"
     //        navigationController?.pushViewController(vc, animated: true)
     }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row >= 0{
-            return 80
-        }
-        return UITableView.automaticDimension
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        if indexPath.row >= 0{
+//            return 80
+//        }
+//        return UITableView.automaticDimension
+//    }
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
             //animation
         let rotationTransform = CATransform3DTranslate(CATransform3DIdentity, -100, 0, 0)
