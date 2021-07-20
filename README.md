@@ -4,7 +4,7 @@
 
 # Information:
 
-EpicNote is a simple application in which a user can create Notes and store it in folders according to the categories user see fit. It has simple and intuitive animations and a user friendly environment.
+EpicNote is a simple application in which a user can create Notes and store it in folders according to the categories the user sees fit. It has simple and intuitive animations and a user-friendly environment.
 
 # ScreenShots:
 
